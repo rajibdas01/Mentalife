@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalife - Mental Healthcare Services</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <h1><b>Mentalife</b></h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <h4>
+                    <center>
+                        <a href="index.html#home">Home</a>&ensp; &emsp;
+                        <a href="#services">Services</a>&ensp; &emsp;
+                        <a href="#meditation">Meditation</a>&ensp; &emsp;
+                        <a href="#quotes">Quotes</a>&ensp; &emsp;
+                        <a href="#music">Music</a>&ensp; &emsp;
+                        <a href="#sleep">Sleep</a>&ensp; &emsp;
+                        <a href="#contact">Contact</a>&ensp; &emsp;
+                    </center>
+                </h4>
+            </ul>
+        </nav>
+    </div>
+    <form action="signup.php" method="POST">
+
+        <section id="registrar">
+
+            <div class="signUpborder">
+                <div class="signUpText">
+                    <p id="signupMessage" class="error"></p>
+                    <h2>
+                        <center>Create New Account</center>
+                    </h2>
+                    <b><label for="username">UserName:</label></b>
+                    <input type="text" name="username" placeholder="UserName" required /><br>
+
+                    <b><label for="name">Full Name:</label></b>
+                    <input type="text" name="name" placeholder="Enter your Full Name" required /><br>
+
+                    <b><label for="password">Password:</label></b>
+                    <input type="password" name="password" placeholder="Enter Password" required /><br>
+
+                    <b><label for="email">Email:</label></b>
+                    <input type="text" pattern=".+@gmail.com" name="email" placeholder="Enter Your Email" required /><br>
+
+                    <b><label for="phone_number">Phone Number:</label></b>
+                    <input type="text" name="phone_number" placeholder="Enter your Phone Number" required /><br>
+
+                    <b><label for="gender">Gender:</label> </b>
+                    <input type="radio" name="gender" value="Male" required />Male
+                    <input type="radio" name="gender" value="Female" required />Female<br>
+
+                    <b><label for="age">Age:</label></b>
+                    <input type="Number" placeholder="Age" name="age" required /><br>
+                    <button type="submit">Signup</button>
+                </div>
+            </div>
+    </form>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mentalife. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

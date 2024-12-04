@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  .profile-header {
+    background-color: #330bd1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Body Section */
+  .profile-body {
+    padding: 20px;
+  }
+  
+  .profile-body .info {
+    margin-bottom: 15px;
+  }
+  
+  .profile-body .info label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .profile-body .info span {
+    color: #555;
+  }
+  
+  /* Footer Section */
+  .profile-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-footer a {
+    color: #330bd1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .profile-footer a:hover {
+    text-decoration: underline;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #3b0acf; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}

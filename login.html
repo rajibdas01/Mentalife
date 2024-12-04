@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalife - Login</title>
+    <link rel="stylesheet" href="login.css">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo2">
+            <img src="Image/logo.png" alt="Mentalife Logo">
+        </div>
+        <h4>
+            <b>Mentalife</b>
+        </h4>
+            <nav>
+                <a href="index.html"><b>Home</b></a>
+            </nav>
+        
+    </div>
+
+    <header class="page-header">
+        <h1>Welcome Back to Mentalife</h1>
+    </header>
+
+    <div class="login-container animate-float">
+        <section id="login">
+            <p id="signupMessage" class="message"></p>
+            <p id="deleteMessage" class="message"></p>
+            <br>
+            <h2>Log In to Your Account</h2>
+
+            <div class="loginForm">
+                
+
+                <form action="login.php" method="POST">
+                    <div class="input-group animate-fade-in">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="input-group animate-fade-in delay-1">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit" class="btn-login animate-bounce">Login</button>
+                    <p id="loginMessage" class="error"></p>
+                    <p class="signup-link animate-fade-in delay-2">Don't have an account? <a href="signup.html">Sign
+                            Up</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Mentalife. All Rights Reserved.</p>
+            <nav>
+                <a href="#" id="aboutLink">About Us</a>
+                <a href="#" id="privacyLink">Privacy Policy</a>
+                <a href="#" id="termsLink">Terms of Service</a>
+            </nav>
+
+            <!-- Hidden About pop-up window -->
+            <div id="aboutPop" class="popup">
+                <h1>About Mentalife</h1>
+                <p>Mentalife is a mental health platform offering resources to improve wellbeing...</p>
+                <button id="closePopup" class="closePopup">Close</button>
+            </div>
+
+            <div id="privacyPop" class="popup">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy matters to us:</p>
+                <ol>
+                    <li><strong>Data Collected:</strong> Personal info (name, email, etc.) and app usage.</li>
+                    <li><strong>Use:</strong> To improve services and personalize experiences.</li>
+                    <li><strong>Sharing:</strong> No selling of data; shared only for legal reasons or app security.
+                    </li>
+                    <li><strong>Security:</strong> Your data is protected with advanced measures.</li>
+                    <li><strong>Your Rights:</strong> Access, update, or delete your data anytime.</li>
+                    <li><strong>Children:</strong> Not for users under 13.</li>
+                </ol>
+                <button id="closePopup" class="closePopup">Close</button>
+            </div>
+
+            <div id="termsPop" class="popup">
+                <h1>Terms of Service</h1>
+                <p>Welcome to Mentalife! By using our app, you agree to these terms:</p>
+
+                <ol>
+                    <li><strong>Eligibility:</strong> Must be 13+ to use.</li>
+                    <li><strong>Account:</strong> Provide accurate info; keep login details secure.</li>
+                    <li><strong>Usage:</strong> No illegal, harmful, or offensive activities allowed.</li>
+                    <li><strong>Liability:</strong> Use at your own risk. Mentalife isn’t a substitute for professional
+                        advice.</li>
+                    <li><strong>Termination:</strong> We can suspend or terminate accounts for violations.</li>
+                    <li><strong>Updates:</strong> Terms may change; continued use means you accept updates.</li>
+                </ol>
+                <button id="closePopup" class="closePopup">Close</button>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><img src="Image/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Image/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="Image/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

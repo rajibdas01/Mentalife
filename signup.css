@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+header {
+    background: url('Image/morskie-oko-tatry.jpg') center center/cover no-repeat;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    text-align: center;
+    color: white;
+    
+}
+section {
+    align-items: center;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+.signUpborder {
+    box-shadow: #333;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    background-color: #f0e8e8;
+}
+
+.signUpText {
+    font-size: large;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: calc(100% - 120px);
+    /* Adjust width to accommodate label and padding */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: justify;
+    /* Doesn't directly justify but helps with spacing */
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.signUpText b {
+    display: inline-block;
+    width: 100px;
+    /* Aligns labels consistently */
+}
+
+button {
+    display: block;
+    /* Makes margin: auto work */
+    margin: 20px auto;
+    /* Centers the button horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 200px;
+    /* Set a width to control the button size */
+    background-color: #7b0ac7;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #484b45;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

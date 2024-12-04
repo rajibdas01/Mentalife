@@ -1,0 +1,241 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+/* Header styles */
+header {
+    background: url('Image/morskie-oko-tatry.jpg') center center/cover no-repeat;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Main page styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    overflow: visible;
+}
+
+/* Main page header */
+header {
+    background: url('Image/morskie-oko-tatry.jpg') center center/cover no-repeat;
+    padding: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Add animation specifically for the Mentalife header text */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start position for slide effect */
+    animation: fadeInUp 1s ease forwards; /* Apply animation */
+    animation-delay: 0.5s; /* Delay for smoother entrance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+/* Keyframe animation for fade-in and slide-up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Slide up from below */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* End at normal position */
+    }
+}
+/* Profile Section */
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+}
+.profile a {
+    color: white;
+}
+
+.signout{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 100;
+    font-size: large;
+}
+.signout a{
+color:red;
+}
+
+
+/* Main content sections */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+header h4{
+    font-style: normal;
+    color: orange;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a[href="#home"],
+
+nav ul li a[href="#services"],
+nav ul li a[href="#meditation"],
+nav ul li a[href="#quotes"],
+nav ul li a[href="#music"],
+nav ul li a[href="#sleep"],
+nav ul li a[href="#contact"] {
+    color: orange;
+}
+
+
+section h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #1c00ef;
+}
+
+/* Service boxes */
+.service {
+    background: #f1f8e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    margin: 0;
+    color: #1c00ef;
+}
+
+/* Buttons */
+button {
+    background-color: #1c00ef;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #001f4d;
+    transform: scale(1.05);
+}
+
+/* Audio player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #1c00ef;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #1c00ef;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00134d;
+}
+
+/* Footer styles */
+footer {
+    background: #484b45;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

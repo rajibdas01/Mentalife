@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+.header {
+  background: url('Image/morskie-oko-tatry.jpg') no-repeat center center/cover;
+  height: 15rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items:center;
+  }
+.logo img{
+  height: 50px;
+  width: 50px;
+}
+.logo h3{
+  padding-left: 5px;
+}
+
+.hero-section {
+ text-align: center;
+}
+  
+.hero-section h1 {
+  margin-top: -10rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .motivational-quotes {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .motivational-quotes h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .motivational-quotes ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .motivational-quotes ol li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  
+  .motivational-quotes ol li em {
+    color: #555;
+    font-style: italic;
+  }
+  
